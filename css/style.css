@@ -1,107 +1,89 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    font-family: "poppins";
+    font-family: "Poppins", sans-serif;
     background: #ddd;
-    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
     background-color: #ddd;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
 }
 
+/* Left side (Local Storage section) */
 .left {
-    width: 49%;
-    height: 100vh;
-    background-color: #ddd;
+    flex: 1 1 400px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*
-.right {
-    width: 49%;
-    height: 100vh;
-    background-color: rgb(119, 167, 173);
-    display: flex;
-}
-*/
-/*------------------------local storage----------------------------*/
-
-.local-storage {
-    display: flex;
-    width: 100%;
-}
-
+/* Left-Local Circle and Line */
 .left-local {
-    width: 30%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-    width: 185px;
-    height: 185px;
+    width: 160px;
+    height: 160px;
     background-color: #212f3c;
     color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 29px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
     font-family: fantasy;
 }
 
 .line {
-    width: 16px;
-    height: 400px;
+    width: 10px;
+    height: 200px;
     background-color: orange;
-    margin-left: 93px;
-    margin-top: 0px;
     border-radius: 30px;
 }
 
-/*------------------------------------ todo list---------------------*/
-
+/* ToDo text area */
 .right-todo {
-    width: 400px;
-    height: 350px;
-    margin-top: 290px;
-    margin-left: 0px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .hello-js {
-    font-size: 50px;
-    margin-left: 40px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .c-h-js {
-    margin-top: 10px;
-    font-size: 23px;
-    margin-left: 50px;
+    font-size: 20px;
 }
 
-/*-------------------right-------------------*/
-
+/* Right ToDo list section */
 .right {
-    margin-top: 250px;
-    margin-left: 65px;
+    flex: 1 1 400px;
     background-color: #1e2a38;
     padding: 30px;
     border-radius: 10px;
-    width: 400px;
-    max-height: fit-content;
-    box-shadow: 0 px 15px rgba(0, 0, 0, .3);
     color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -112,13 +94,15 @@ h2 {
 .inputBox {
     display: flex;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .inputBox input {
-    flex: 1;
+    flex: 1 1 200px;
     padding: 10px;
     border: none;
     border-radius: 5px 0 0 5px;
+    min-width: 0;
 }
 
 .inputBox button {
@@ -148,4 +132,42 @@ h2 {
     font-size: 0.8rem;
     color: #aaa;
     text-align: center;
+}
+
+/* ----------- Responsive Tweaks ----------- */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .text {
+        width: 120px;
+        height: 120px;
+        font-size: 18px;
+    }
+
+    .line {
+        height: 150px;
+        width: 8px;
+    }
+
+    .hello-js {
+        font-size: 28px;
+    }
+
+    .c-h-js {
+        font-size: 18px;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
 }
