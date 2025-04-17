@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "poppins";
+    background: #ddd;
+    font-family: poppins;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #ddd;
+}
+
+.left {
+    width: 49%;
+    height: 100vh;
+    background-color: #ddd;
+    display: flex;
+}
+
+/*
+.right {
+    width: 49%;
+    height: 100vh;
+    background-color: rgb(119, 167, 173);
+    display: flex;
+}
+*/
+/*------------------------local storage----------------------------*/
+
+.local-storage {
+    display: flex;
+    width: 100%;
+}
+
+.left-local {
+    width: 30%;
+    height: 100vh;
+}
+
+.text {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    width: 185px;
+    height: 185px;
+    background-color: #212f3c;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 29px;
+    font-family: fantasy;
+}
+
+.line {
+    width: 16px;
+    height: 400px;
+    background-color: orange;
+    margin-left: 93px;
+    margin-top: 0px;
+    border-radius: 30px;
+}
+
+/*------------------------------------ todo list---------------------*/
+
+.right-todo {
+    width: 400px;
+    height: 350px;
+    margin-top: 290px;
+    margin-left: 0px;
+}
+
+.hello-js {
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.c-h-js {
+    margin-top: 10px;
+    font-size: 23px;
+    margin-left: 50px;
+}
+
+/*-------------------right-------------------*/
+
+.right {
+    margin-top: 250px;
+    margin-left: 65px;
+    background-color: #1e2a38;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-height: fit-content;
+    box-shadow: 0 px 15px rgba(0, 0, 0, .3);
+    color: white;
+}
+
+h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.inputBox button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #2c3e50;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hint {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: center;
+}

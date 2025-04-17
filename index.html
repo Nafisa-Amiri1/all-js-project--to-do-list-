@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="local-storage">
+                <div class="left-local">
+                    <div class="text">
+                        <p>Local <br> Storage</p>
+                    </div>
+                    <div class="line">
+                        <div> </div>
+                    </div>
+                </div>
+                <div class="right-todo">
+                    <h1 class="hello-js">ToDo List</h1>
+                    <p class="c-h-js"> CSS HTML & JS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>TASK LIST</h2>
+            <div class="inputBox">
+                <input type="text" id="taskinput" placeholder="Enter Your Task">
+                <button onclick="addTask()">Add Task </button>
+            </div>
+            <ul id="taskList"></ul>
+            <p class="hint">Right Click to Delete the Element</p>
+        </div>
+
+
+    </div>
+
+    <script src="./js/App.js"></script>
+</body>
+
+</html>
